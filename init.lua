@@ -41,13 +41,13 @@ local pixbuf_get_from_surface = gdk.pixbuf_get_from_surface
 local pixbuf_get_from_window = gdk.pixbuf_get_from_window
 -- > NICE LIBS
 -- Colors
-local colors = require("nice.colors")
+local colors = require("sub.nice.colors")
 local color_darken = colors.darken
 local color_lighten = colors.lighten
 local is_contrast_acceptable = colors.is_contrast_acceptable
 local relative_luminance = colors.relative_luminance
 -- Shapes
-local shapes = require("nice.shapes")
+local shapes = require("sub.nice.shapes")
 local create_corner_top_left = shapes.create_corner_top_left
 local create_edge_left = shapes.create_edge_left
 local create_edge_top_middle = shapes.create_edge_top_middle
@@ -150,7 +150,7 @@ _private.sticky_color = "#f6a2ed"
 -- => Saving and loading of color rules
 -- ============================================================
 local table = table
-local t = require("nice.table")
+local t = require("sub.nice.table")
 table.save = t.save
 table.load = t.load
 
